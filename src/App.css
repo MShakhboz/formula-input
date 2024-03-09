@@ -1,0 +1,147 @@
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.input_container {
+  width: 100%;
+  align-items: center;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-height: 38px;
+  position: relative;
+  transition: all 100ms ease 0s;
+  background-color: white;
+  border-color: rgb(204, 204, 204);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  outline: 0px !important;
+}
+
+
+.value_inputs_wrapper {
+  align-items: center;
+  display: flex;
+  flex: 1 1 0%;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  padding: 2px 8px;
+  box-sizing: border-box;
+}
+/* tag box */
+.value_box {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  min-width: 0px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 2px;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.value_box .chosen_value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 2px;
+  color: rgb(51, 51, 51);
+  font-size: 85%;
+  padding: 3px 3px 3px 6px;
+  box-sizing: border-box;
+}
+
+.value_box .value_clear_icon {
+  align-items: center;
+  display: flex;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.value_box .value_clear_icon:hover {
+  background-color: rgb(255, 189, 173);
+  color: rgb(222, 53, 11);
+}
+
+
+
+.base_input {
+  color: inherit;
+  background: 0px center;
+  opacity: 1;
+  /* width: 100%; */
+  max-width: 550;
+  grid-area: 1 / 2;
+  font: inherit;
+  width: 2px;
+  border: 0px;
+  margin: 0px;
+  outline: 0px;
+  padding: 0px;
+}
+
+.control_input_value {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.icon_control {
+  display: flex;
+  transition: color 150ms ease 0s;
+  color: rgb(204, 204, 204);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.control_input_value span {
+  align-self: stretch;
+  width: 1px;
+  background-color: rgb(204, 204, 204);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.drop_down_container {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  background-color: white;
+  border-color: rgb(204, 204, 204);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 8px;
+  width: 100%;
+  /* display: none; */
+}
+
+.display{ 
+  display: block;
+}
+.display_none {
+  display: none;
+}
